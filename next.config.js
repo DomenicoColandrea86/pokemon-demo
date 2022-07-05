@@ -1,8 +1,7 @@
-const { withPlausibleProxy } = require("next-plausible");
 
-module.exports = withPlausibleProxy()({
+module.exports = {
   images: {
     domains: ["raw.githubusercontent.com"],
     minimumCacheTTL: 6000000,
   },
-});
+};
